@@ -35,6 +35,22 @@ const routes: Routes = [
     path: 'produitsproms',
     loadChildren: () => import('./produitsproms/produitsproms.module').then(m => m.ProduitspromsPageModule)
   },
+  {
+    path: 'boat-delabrise',
+    loadChildren: () => import('./boat-delabrise/boat-delabrise.module').then( m => m.BoatDelabrisePageModule)
+  },
+  {
+    path: 'boat-saphir',
+    loadChildren: () => import('./boat-saphir/boat-saphir.module').then( m => m.BoatSaphirPageModule)
+  },
+  {
+    path: 'boat-gastmicher',
+    loadChildren: () => import('./boat-gastmicher/boat-gastmicher.module').then( m => m.BoatGastmicherPageModule)
+  },
+  {
+    path: 'boat-aquilon',
+    loadChildren: () => import('./boat-aquilon/boat-aquilon.module').then( m => m.BoatAquilonPageModule)
+  },
 
 ];
 

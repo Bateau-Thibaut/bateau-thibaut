@@ -80,7 +80,10 @@
     margin-right: 50px;
 
     ion-button {
-        font-size: 0.9em;
+        opacity: 0.9;
+        width: 200;
+        height: 70px;
+        font-size: 1em;
         /* Ajustez la taille de la police selon vos préférences */
     }
 }

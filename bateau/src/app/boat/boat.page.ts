@@ -14,4 +14,19 @@ export class BoatPage implements OnInit {
   ngOnInit() {
   }
 
+  OnGoToDelabrise() {
+    this.router.navigate(['/boat-delabrise']);
+  }
+  OnGoToSaphir() {
+    this.router.navigate(['/boat-saphir']);
+  }
+  OnGoToGastmicher() {
+    this.router.navigate(['/boat-gastmicher']);
+  }
+  OnGoToAquilon() {
+    this.router.navigate(['/boat-aquilon']);
+  }
+
+
+
 }

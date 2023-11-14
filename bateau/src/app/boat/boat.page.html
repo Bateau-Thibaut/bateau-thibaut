@@ -1,5 +1,53 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
-
+    <hr>
+    <ion-title class="ion-text-center">Bateaux</ion-title>
+    <hr>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card class="custom-card" (click)="OnGoToDelabrise()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">De La Brise</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/delabrise.jpg" alt="delabrise"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card class="custom-card" (click)="OnGoToSaphir()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Saphir</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/saphir.jpg" alt="saphir"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-card class="custom-card" (click)="OnGoToGastmicher()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Gast Micher</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/gastmicher.jpg" alt="gastmicher"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card class="custom-card" (click)="OnGoToAquilon()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Aquilon</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/aquilon.jpg" alt="aquilon"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
 <app-footer></app-footer>
