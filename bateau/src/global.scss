@@ -1,0 +1,86 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+.custom-background {
+    --background: url('./assets/images/bateau.jpg') no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    /* Ajustez la taille de la police selon vos préférences */
+    padding: 20px;
+    /* Ajoute de l'espace autour du titre */
+    border: 2px solid #690d0d;
+    /* Bordure de 2px solide, ajustez la couleur selon vos préférences */
+    border-radius: 10px;
+    /* Coins arrondis de la bordure */
+    background-color: rgba(255, 255, 255, 0.35);
+    /* Fond semi-transparent, ajustez selon vos préférences */
+    color: #690d0d;
+    /* Couleur du texte, ajustez selon vos préférences */
+    margin: 0 auto;
+    margin-top: -600px;
+    /* Centre le titre horizontalement */
+    max-width: 80%;
+    /* Limite la largeur maximale du titre */
+    font-family: 'title', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.custom-grid {
+    align-items: center;
+    padding-top: 200px;
+}
+
+.custom-col {
+    flex: 1;
+    padding-top: 60px;
+    margin: 5px;
+    margin-right: 50px;
+
+    ion-button {
+        font-size: 0.9em;
+        /* Ajustez la taille de la police selon vos préférences */
+    }
+}

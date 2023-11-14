@@ -1,0 +1,42 @@
+<app-header></app-header>
+<ion-content [fullscreen]="true" class="custom-background">
+  <hr>
+  <ion-title>Bateau Thibault</ion-title>
+  <hr>
+  <ion-grid class="custom-grid">
+    <ion-row>
+      <ion-col class="custom-col" size="6">
+        <ion-button shape="round" size="Large" color="light" (click)="OnGoToProductsProms()">
+          <ion-text class="ion-text-end">Produits et Promotions</ion-text>
+          <ion-icon name="fish-outline" class="ion-padding-start"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="custom-col" size="4">
+        <ion-button shape="round" size="Large" color="light" (click)="OnGoToBoats()">
+          <ion-text class="ion-text-end">Bateaux</ion-text>
+          <ion-icon name="boat-outline" class="ion-padding-start"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col class="custom-col" size="4">
+        <ion-button shape="round" size="Large" color="light" (click)="OnGoToRestaurants()">
+          <ion-text class="ion-text-end">Restaurants</ion-text>
+          <ion-icon name="restaurant-outline" class="ion-padding-start"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="custom-col" size="4">
+        <ion-button shape="round" size="Large" color="light" (click)="OnGoToRecettes()">
+          <ion-text class="ion-text-end">Recettes</ion-text>
+          <ion-icon name="receipt-outline" class="ion-padding-start"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col class="custom-col" size="4">
+        <ion-button shape="round" size="Large" color="light" (click)="OnGoToContact()">
+          <ion-text class="ion-text-end">Contact</ion-text>
+          <ion-icon name="person-outline" class="ion-padding-start"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<app-footer></app-footer>

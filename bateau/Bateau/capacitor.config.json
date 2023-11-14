@@ -1,0 +1,11 @@
+{
+  "appId": "com.bateau.app",
+  "appName": "Bateau",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
