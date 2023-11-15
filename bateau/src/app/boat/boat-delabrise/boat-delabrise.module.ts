@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { BoatDelabrisePageRoutingModule } from './boat-delabrise-routing.module';
 
 import { BoatDelabrisePage } from './boat-delabrise.page';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [

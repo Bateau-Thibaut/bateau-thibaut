@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { BoatSaphirPageRoutingModule } from './boat-saphir-routing.module';
 
 import { BoatSaphirPage } from './boat-saphir.page';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [

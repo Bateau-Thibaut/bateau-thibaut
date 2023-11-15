@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { BoatAquilonPageRoutingModule } from './boat-aquilon-routing.module';
 
 import { BoatAquilonPage } from './boat-aquilon.page';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [

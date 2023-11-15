@@ -37,20 +37,36 @@ const routes: Routes = [
   },
   {
     path: 'boat-delabrise',
-    loadChildren: () => import('./boat-delabrise/boat-delabrise.module').then( m => m.BoatDelabrisePageModule)
+    loadChildren: () => import('./boat/boat-delabrise/boat-delabrise.module').then(m => m.BoatDelabrisePageModule)
   },
   {
     path: 'boat-saphir',
-    loadChildren: () => import('./boat-saphir/boat-saphir.module').then( m => m.BoatSaphirPageModule)
+    loadChildren: () => import('./boat/boat-saphir/boat-saphir.module').then(m => m.BoatSaphirPageModule)
   },
   {
     path: 'boat-gastmicher',
-    loadChildren: () => import('./boat-gastmicher/boat-gastmicher.module').then( m => m.BoatGastmicherPageModule)
+    loadChildren: () => import('./boat/boat-gastmicher/boat-gastmicher.module').then(m => m.BoatGastmicherPageModule)
   },
   {
     path: 'boat-aquilon',
-    loadChildren: () => import('./boat-aquilon/boat-aquilon.module').then( m => m.BoatAquilonPageModule)
+    loadChildren: () => import('./boat/boat-aquilon/boat-aquilon.module').then(m => m.BoatAquilonPageModule)
   },
+  {
+    path: 'recette-homard',
+    loadChildren: () => import('./recettes/recette-homard/recette-homard.module').then(m => m.RecetteHomardPageModule)
+  },
+  {
+    path: 'recette-stjacques',
+    loadChildren: () => import('./recettes/recette-stjacques/recette-stjacques.module').then(m => m.RecetteStjacquesPageModule)
+  },
+  {
+    path: 'recette-bar',
+    loadChildren: () => import('./recettes/recette-bar/recette-bar.module').then(m => m.RecetteBarPageModule)
+  },
+  {
+    path: 'recette-tourteau',
+    loadChildren: () => import('./recettes/recette-tourteau/recette-tourteau.module').then(m => m.RecetteTourteauPageModule)
+  }
 
 ];
 

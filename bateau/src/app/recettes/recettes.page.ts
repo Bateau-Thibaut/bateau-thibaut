@@ -13,4 +13,20 @@ export class RecettesPage implements OnInit {
   ngOnInit() {
   }
 
+  OnGoToHomard() {
+    this.router.navigate(['/recette-homard']);
+  }
+  OnGoToStjacques() {
+    this.router.navigate(['/recette-stjacques']);
+  }
+  OnGoToBar() {
+    this.router.navigate(['/recette-bar']);
+  }
+  OnGoToTourteau() {
+    this.router.navigate(['/recette-tourteau']);
+  }
+  OnGoToContact() {
+    this.router.navigate(['/contact']);
+  }
+
 }

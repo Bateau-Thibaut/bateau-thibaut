@@ -1,5 +1,67 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
-
+    <hr>
+    <ion-title class="ion-text-center">Recettes</ion-title>
+    <hr>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card (click)="OnGoToHomard()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Homard</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/homard.jpg" alt="delabrise"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card (click)="OnGoToStjacques()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">St Jacques</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/stjacques.jpg" alt="saphir"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-card (click)="OnGoToBar()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Bar</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/bar.jpg" alt="gastmicher"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card (click)="OnGoToTourteau()">
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Tourteau</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-img src="./assets/images/tourteau.jpg" alt="aquilon"></ion-img>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-button (click)="OnGoToContact()" shape="round" size="Large" color="light">
+                    <ion-text class="ion-text-end">Contact</ion-text>
+                    <ion-icon name="person-outline" class="ion-padding-start"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button (click)="OnGoToContact()" shape="round" size="Large" color="light">
+                    <ion-text class="ion-text-end">Contact</ion-text>
+                    <ion-icon name="person-outline" class="ion-padding-start"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
 <app-footer></app-footer>
