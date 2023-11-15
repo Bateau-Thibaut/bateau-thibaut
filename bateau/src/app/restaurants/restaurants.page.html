@@ -1,7 +1,63 @@
 <app-header></app-header>
-
-<ion-content [fullscreen]="true" class="custom-background">
-
+<ion-content class="custom-background" [fullscreen]="true">
+    <hr>
+    <ion-title class="ion-text-center">Nos Restaurants Partenaires</ion-title>
+    <hr>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card (click)="OnGoToBistrotgascons()">
+                    <ion-img src="./assets/images/bistrotgascon.jpg" alt="bistrotgascon"></ion-img>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Le Bistrot Des Gascons</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card (click)="OnGoToFoudelile()">
+                    <ion-img src="./assets/images/lesfousdelile.jpg" alt="lesfousdelile"></ion-img>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Les fous de l'île</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-card (click)="OnGoToBistrotlandais()">
+                    <ion-img src="./assets/images/bistrotlandais.jpg" alt="bistrotlandais"></ion-img>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Le Bistrot Landais</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card (click)="OnGoToVillaneuftrois()">
+                    <ion-img src="./assets/images/villa9trois.jpg" alt="villa9trois"></ion-img>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Villa 9 Trois</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-card (click)="OnGoToBistrotsommelier()">
+                    <ion-img src="./assets/images/bistrotsommelier.jpg" alt="bistrotsommelier"></ion-img>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Le Bistrot Du Sommelier</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card (click)="OnGoToContact()">
+                    <ion-img src="./assets/images/devenezpartenaire.jpg" alt="devenezpartenaire"></ion-img>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Devenez Partenaire !</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
-
 <app-footer></app-footer>

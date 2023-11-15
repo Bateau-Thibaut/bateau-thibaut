@@ -14,4 +14,24 @@ export class RestaurantsPage implements OnInit {
   ngOnInit() {
   }
 
+  OnGoToContact() {
+    this.router.navigate(['/contact']);
+  }
+
+  OnGoToBistrotgascons() {
+    this.router.navigate(['/restaurant-bistrotgascons']);
+  }
+  OnGoToBistrotlandais() {
+    this.router.navigate(['/restaurant-bistrotlandais']);
+  }
+  OnGoToBistrotsommelier() {
+    this.router.navigate(['/restaurant-bistrotsommelier']);
+  }
+  OnGoToFoudelile() {
+    this.router.navigate(['/restaurant-foudelile']);
+  }
+  OnGoToVillaneuftrois() {
+    this.router.navigate(['/restaurant-villaneuftrois']);
+  }
+
 }

@@ -66,7 +66,28 @@ const routes: Routes = [
   {
     path: 'recette-tourteau',
     loadChildren: () => import('./recettes/recette-tourteau/recette-tourteau.module').then(m => m.RecetteTourteauPageModule)
-  }
+  },
+  {
+    path: 'restaurant-bistrotgascons',
+    loadChildren: () => import('./restaurants/restaurant-bistrotgascons/restaurant-bistrotgascons.module').then(m => m.RestaurantBistrotgasconsPageModule)
+  },
+  {
+    path: 'restaurant-bistrotlandais',
+    loadChildren: () => import('./restaurants/restaurant-bistrotlandais/restaurant-bistrotlandais.module').then(m => m.RestaurantBistrotlandaisPageModule)
+  },
+  {
+    path: 'restaurant-bistrotsommelier',
+    loadChildren: () => import('./restaurants/restaurant-bistrotsommelier/restaurant-bistrotsommelier.module').then(m => m.RestaurantBistrotsommelierPageModule)
+  },
+  {
+    path: 'restaurant-foudelile',
+    loadChildren: () => import('./restaurants/restaurant-foudelile/restaurant-foudelile.module').then(m => m.RestaurantFoudelilePageModule)
+  },
+  {
+    path: 'restaurant-villaneuftrois',
+    loadChildren: () => import('./restaurants/restaurant-villaneuftrois/restaurant-villaneuftrois.module').then(m => m.RestaurantVillaneuftroisPageModule)
+  },
+
 
 ];
 

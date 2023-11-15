@@ -14,6 +14,10 @@ export class BoatPage implements OnInit {
   ngOnInit() {
   }
 
+  OnGoToContact() {
+    this.router.navigate(['/contact']);
+  }
+
   OnGoToDelabrise() {
     this.router.navigate(['/boat-delabrise']);
   }
