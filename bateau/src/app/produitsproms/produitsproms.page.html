@@ -1,5 +1,26 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
+  <div class="content text-3xl text-yellow-50 underline">
+    <b class="text-3xl text-yellow-50 underline"
+      >Click on a shape to see the ripple</b
+    >
+  </div>
 
+  <div class="wrapper">
+    <div class="ion-activatable font-bold ripple-parent custom-parent">
+      Custom Parent Color
+      <ion-ripple-effect class="custom-ripple"></ion-ripple-effect>
+    </div>
+
+    <div class="ion-activatable ripple-parent">
+      Custom Ripple Color
+      <ion-ripple-effect class="custom-ripple"></ion-ripple-effect>
+    </div>
+
+    <div class="ion-activatable ripple-parent">
+      Custom Ripple Color
+      <ion-ripple-effect class="custom-ripple"></ion-ripple-effect>
+    </div>
+  </div>
 </ion-content>
 <app-footer></app-footer>
