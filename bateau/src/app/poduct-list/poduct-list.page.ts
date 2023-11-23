@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductListService } from "../services/productList/product-list.service";
 import { ActivatedRoute, Router } from "@angular/router";
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-poduct-list',
@@ -16,7 +17,7 @@ export class PoductListPage implements OnInit {
 
   cartArray: any[] = [];
 
-  constructor(private productListService: ProductListService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private productListService: ProductListService, private router: Router, private route: ActivatedRoute, private toastController: ToastController) { }
 
   ngOnInit() {
     const productId = this.route.snapshot.params['id'];
@@ -50,9 +51,16 @@ export class PoductListPage implements OnInit {
     }
   }
 
-  addToBasket(product: { name: string, price: number, categoryID: number }) {
+  async addToBasket(product: { name: string, price: number, categoryID: number }) {
     console.log("Je suis ajouté au panier", product.name, product.price);
+    const toast = await this.toastController.create({
+      message: `${product.name} à été ajouté au panier !`,
+      duration: 1500, // Durée de l'affichage en millisecondes
+      position: 'top'
+      // Position de la notification
+    });
 
+    toast.present();
     // Utilisez le service pour ajouter le produit au panier
     this.productListService.addToCart(product);
 

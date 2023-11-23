@@ -1,6 +1,8 @@
-<app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
-
+  <app-header></app-header>
+  <div class="titre">
+    <h2>Panier</h2>
+  </div>
   <div class="divContent">
     <ion-list class="list-panier" *ngIf="cartArray && cartArray.length">
       <ion-item *ngFor="let item of cartArray" lines="none">

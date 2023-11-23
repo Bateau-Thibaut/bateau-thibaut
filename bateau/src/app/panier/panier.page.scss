@@ -6,6 +6,17 @@
     /* Centre la liste horizontalement */
 }
 
+.titre {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+
 .divContent {
     display: flex;
     justify-content: center;
@@ -76,11 +87,14 @@ ion-item {
     color: white;
 }
 
+
 .price {
     font-size: 14px;
     font-weight: normal;
     color: white;
     width: 100px;
+    text-align: center;
+    justify-content: center;
 }
 
 .total-price {

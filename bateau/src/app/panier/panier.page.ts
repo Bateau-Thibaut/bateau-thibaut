@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductListService } from '../services/productList/product-list.service';
+import { AlertController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-panier',
@@ -12,7 +13,7 @@ export class PanierPage implements OnInit {
   cartArray: any[] = [];
   address: string = "123 Rue de la République, Paris";
   pickupDate: Date = new Date(); // Vous devez définir la date de récupération selon votre logique.
-  constructor(private productListService: ProductListService) { }
+  constructor(private productListService: ProductListService, private alertController: AlertController, private toastController: ToastController) { }
 
   // Incrémente la quantité du produit dans le panier
   incrementQuantity(item: any) {
@@ -22,25 +23,75 @@ export class PanierPage implements OnInit {
   }
 
   // Décrémente la quantité du produit dans le panier
-  decrementQuantity(item: any) {
+  async decrementQuantity(item: any) {
     if (item.quantity > 1) {
       item.quantity -= 1;
       item.totalPrice = item.quantity * item.price;
     } else {
-      // Si la quantité est 1, supprimez complètement le produit du panier
-      this.cartArray = this.cartArray.filter(product => product !== item);
+      const alert = await this.alertController.create({
+        header: 'Suppression du panier',
+        message: `Voulez-vous supprimer ${item.name} du panier ?`,
+        buttons: [
+          {
+            text: 'Non',
+            role: 'cancel',
+            handler: () => {
+              console.log('Supression annulée');
+            }
+          },
+          {
+            text: 'Oui',
+            handler: async () => {
+              console.log('Commande confirmée');
+              this.cartArray = this.cartArray.filter(product => product !== item);
+
+            }
+          }
+        ]
+      });
+      await alert.present();
     }
-    this.updateCart();
+    this.updateCart()
   }
+
 
   // Met à jour le panier dans le stockage local
   updateCart() {
     localStorage.setItem("panier", JSON.stringify(this.cartArray));
   }
 
-  validateOrder() {
-    // Ajoutez la logique de validation de la commande ici
-    console.log("Commande validée !");
+  async validateOrder() {
+    const alert = await this.alertController.create({
+      header: 'Confirmer la commande',
+      message: `Envoyer votre commande de ${this.calculateTotalPrice()} € à Bateau Thibault ?`,
+      buttons: [
+        {
+          text: 'Non',
+          role: 'cancel',
+          handler: () => {
+            console.log('Commande annulée');
+          }
+        },
+        {
+          text: 'Oui',
+          handler: async () => {
+            console.log('Commande confirmée');
+            // Ajoutez ici la logique pour envoyer la commande
+
+            // Affichez la notification de confirmation
+            const toast = await this.toastController.create({
+              message: 'Commande confirmée',
+              duration: 2000, // Durée de l'affichage en millisecondes
+              position: 'top' // Position de la notification
+            });
+
+            toast.present();
+          }
+        }
+      ]
+    });
+
+    await alert.present();
   }
 
   calculateTotalPrice(): number {
