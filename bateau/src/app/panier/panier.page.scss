@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     /* Centre la liste verticalement */
 }
 
@@ -23,7 +23,66 @@ ion-item {
     font-style: italic;
 }
 
-.price,
+.OrderPrice {
+    font-weight: bold;
+    font-style: italic;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+}
+
+.infoCommande {
+    text-align: left;
+    font-size: small;
+}
+
+.order-summary {
+    width: 350px;
+    margin-top: 20px;
+    /* Ajoute une marge en haut du composant */
+    background-color: #f4f4f4;
+    /* Couleur de fond */
+    padding: 10px;
+    /* Ajoute un rembourrage à l'intérieur du composant */
+    border-radius: 8px;
+    /* Ajoute une bordure arrondie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ajoute une légère ombre */
+
+    ion-grid {
+        ion-row {
+            border-bottom: 1px solid #ddd;
+            /* Ajoute une ligne de séparation entre chaque ligne */
+            padding: 8px 0;
+            /* Ajoute un peu d'espace autour du texte dans chaque ligne */
+
+            ion-col {
+                font-weight: bold;
+                /* Rend le texte en gras */
+            }
+        }
+
+        ion-button {
+            margin-top: 10px;
+            /* Ajoute de l'espace au-dessus du bouton */
+        }
+    }
+}
+
+.add-button {
+    --background: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    color: white;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    width: 100px;
+}
+
 .total-price {
     font-size: 14px;
     font-weight: normal;
@@ -54,4 +113,8 @@ ion-col {
 .empty-cart {
     text-align: center;
     margin-top: 20px;
+}
+
+ion-card {
+    all: unset;
 }

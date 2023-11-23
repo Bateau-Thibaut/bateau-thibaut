@@ -10,7 +10,8 @@ export class PanierPage implements OnInit {
 
   // Utilisez le service pour récupérer le panier
   cartArray: any[] = [];
-
+  address: string = "123 Rue de la République, Paris";
+  pickupDate: Date = new Date(); // Vous devez définir la date de récupération selon votre logique.
   constructor(private productListService: ProductListService) { }
 
   // Incrémente la quantité du produit dans le panier
@@ -36,6 +37,16 @@ export class PanierPage implements OnInit {
   updateCart() {
     localStorage.setItem("panier", JSON.stringify(this.cartArray));
   }
+
+  validateOrder() {
+    // Ajoutez la logique de validation de la commande ici
+    console.log("Commande validée !");
+  }
+
+  calculateTotalPrice(): number {
+    return this.cartArray.reduce((total, item) => total + item.totalPrice, 0);
+  }
+
 
 
   ngOnInit() {
