@@ -35,3 +35,23 @@ ion-item {
     color: white;
     font-style: italic;
 }
+
+ion-grid {
+    margin-top: 20px;
+}
+
+.header-row,
+.data-row {
+    border-bottom: 1px solid #ccc;
+}
+
+.header-col,
+ion-col {
+    text-align: center;
+    padding: 10px;
+}
+
+.empty-cart {
+    text-align: center;
+    margin-top: 20px;
+}
