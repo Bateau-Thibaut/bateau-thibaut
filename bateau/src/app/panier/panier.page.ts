@@ -84,14 +84,16 @@ export class PanierPage implements OnInit {
               duration: 2000, // Durée de l'affichage en millisecondes
               position: 'top' // Position de la notification
             });
-
+            this.productListService.clearCart();
             toast.present();
           }
+
         }
       ]
     });
 
     await alert.present();
+
   }
 
   calculateTotalPrice(): number {
