@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {ProduitspromsService} from "../services/produitsproms/produitsproms.service";
 
 @Component({
   selector: 'app-produitsproms',
@@ -7,10 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./produitsproms.page.scss'],
 })
 export class ProduitspromsPage implements OnInit {
-
+public category!: number;
   constructor(private router: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+
+  goOnPage(category: number) {
+    this.router.navigate(['/poduct-list/'+category]);
+  }
 }

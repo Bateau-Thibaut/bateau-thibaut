@@ -28,10 +28,6 @@ const routes: Routes = [
     loadChildren: () => import('./contact/contact.module').then(m => m.ContactPageModule)
   },
   {
-    path: 'produits',
-    loadChildren: () => import('./produitsproms/produitsproms.module').then(m => m.ProduitspromsPageModule)
-  },
-  {
     path: 'produitsproms',
     loadChildren: () => import('./produitsproms/produitsproms.module').then(m => m.ProduitspromsPageModule)
   },
@@ -86,6 +82,10 @@ const routes: Routes = [
   {
     path: 'restaurant-villaneuftrois',
     loadChildren: () => import('./restaurants/restaurant-villaneuftrois/restaurant-villaneuftrois.module').then(m => m.RestaurantVillaneuftroisPageModule)
+  },
+  {
+    path: 'poduct-list/:id',
+    loadChildren: () => import('./poduct-list/poduct-list.module').then( m => m.PoductListPageModule)
   },
 
 

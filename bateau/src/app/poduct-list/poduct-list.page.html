@@ -1,0 +1,21 @@
+<app-header></app-header>
+<ion-content class="custom-background" [fullscreen]="true">
+
+  <div class="main_content">
+    <ion-card class="content_div" *ngIf="dataok && dataok.length">
+        <ion-card-header >
+          <ion-card-title >{{affichageNom()}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content >
+          <ion-list>
+            <ion-item class="col_div" *ngFor="let product of dataok" >
+              <ion-label>{{product.name}}</ion-label>
+              <ion-note>{{product.price}} €</ion-note>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+<app-footer></app-footer>
