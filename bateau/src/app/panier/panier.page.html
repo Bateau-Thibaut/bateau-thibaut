@@ -1,0 +1,19 @@
+<app-header></app-header>
+<ion-content class="custom-background" [fullscreen]="true">
+
+  <div class="divContent">
+    <ion-list class="list-panier" *ngIf="cartArray && cartArray.length">
+      <ion-item *ngFor="let item of cartArray" lines="none">
+        <ion-label>{{ item.name }}</ion-label>
+        <ion-note slot="end" class="price">{{ item.price }} €</ion-note>
+        <ion-note slot="end" class="price">Quantité : {{ item.quantity }}</ion-note>
+        <ion-note slot="end" class="total-price">Prix total : {{ item.totalPrice }} €</ion-note>
+        <ion-button fill="clear" (click)="decrementQuantity(item)">-</ion-button>
+        <ion-button fill="clear" (click)="incrementQuantity(item)">+</ion-button>
+        <!-- Ajoutez ici d'autres informations si nécessaire -->
+      </ion-item>
+    </ion-list>
+    <div *ngIf="!cartArray || cartArray.length === 0" class="empty-cart">Le panier est vide.</div>
+  </div>
+</ion-content>
+<app-footer></app-footer>

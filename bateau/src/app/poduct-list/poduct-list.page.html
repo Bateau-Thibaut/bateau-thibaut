@@ -1,21 +1,16 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
 
-  <div class="main_content">
-    <ion-card class="content_div" *ngIf="dataok && dataok.length">
-        <ion-card-header >
-          <ion-card-title >{{affichageNom()}}</ion-card-title>
-        </ion-card-header>
-
-        <ion-card-content >
-          <ion-list>
-            <ion-item class="col_div" *ngFor="let product of dataok" >
-              <ion-label>{{product.name}}</ion-label>
-              <ion-note>{{product.price}} €</ion-note>
-            </ion-item>
-          </ion-list>
-        </ion-card-content>
-    </ion-card>
+  <div class="div-content">
+    <ion-list class="list" *ngIf="dataok && dataok.length">
+      <ion-item *ngFor="let product of dataok">
+        <ion-label>{{product.name}}</ion-label>
+        <ion-text>{{product.price}} € </ion-text>
+        <ion-button class="add-button" (click)="addToBasket(product)">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
 <app-footer></app-footer>

@@ -1,0 +1,37 @@
+.list-panier {
+    background-color: transparent;
+    width: 80%;
+    /* Ajustez la largeur selon vos besoins */
+    margin: 0 auto;
+    /* Centre la liste horizontalement */
+}
+
+.divContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Centre la liste verticalement */
+}
+
+ion-item {
+    --background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.price,
+.total-price {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+}
+
+.empty-cart {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
