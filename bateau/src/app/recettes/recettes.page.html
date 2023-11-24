@@ -1,5 +1,87 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
+    
+  <div class="main_content">
+    <div class="titre">
+      <h2 class="underline-text">Nos Recettes</h2>
+    </div>
+
+
+    <div class="content_div">
+      <ion-grid (click)="OnGoToHomard()">
+        <ion-row>
+            <ion-img src="./assets/images/homard.jpg" alt="homard" class="image"></ion-img>
+          <ion-col class="card_text">
+            <ion-label> Homard </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+
+    <div class="content_div">
+        <ion-grid (click)="OnGoToStjacques()">
+          <ion-row>
+              <ion-img src="./assets/images/stjacques.jpg" alt="stjacques" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Saphir </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="content_div">
+        <ion-grid (click)="OnGoToBar()">
+          <ion-row>
+              <ion-img src="./assets/images/bar.jpg" alt="bar" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Bar </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="content_div">
+        <ion-grid (click)="OnGoToTourteau()">
+          <ion-row>
+              <ion-img src="./assets/images/tourteau.jpg" alt="tourteau" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Tourteau </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+    <ion-row class="bottom_area">
+        <div class="describe_frame">
+            <ion-grid>
+                <ion-col>
+                <ion-label>Tous les eaux mènes à Thibaut </ion-label>
+                <ion-label>06.63.99.99.78 </ion-label>
+                <ion-label>lebateaudethibault@gmail.com </ion-label>
+                <ion-label>www.facebook.com/lebateaudethibault</ion-label>
+                </ion-col>
+            </ion-grid>
+        </div>
+        <div class="button_div">
+            <ion-grid (click)="OnGoToContact()">
+              <ion-row>
+                <ion-col>
+                    <ion-icon class="back" name="mail"></ion-icon>
+                    <ion-label>Contact</ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+    </ion-row>
+
+  </div>
+</ion-content>
+
+
+
+
+<!-- <ion-content class="custom-background" [fullscreen]="true">
     <hr>
     <ion-title class="ion-text-center">Recettes</ion-title>
     <hr>
@@ -55,5 +137,4 @@
             </ion-col>
         </ion-row>
     </ion-grid>
-</ion-content>
-<app-footer></app-footer>
+</ion-content> -->

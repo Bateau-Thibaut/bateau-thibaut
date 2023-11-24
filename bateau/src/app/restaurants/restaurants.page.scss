@@ -1,0 +1,162 @@
+.main_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    //border-radius: 5px;
+    margin-top: 35%;
+  
+      h2{
+        color: var(--ion-color-light);
+        font-weight: 750;
+        font-style: italic;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+  
+  
+  
+    .content_div {
+      background: rgba(0, 0, 0, 0.4);
+      width: 95%;
+      border-radius: 4px;
+      font-weight: bold;
+  
+      padding-top: 0px;
+      margin: 5px 0px 1px;
+  
+      ion-grid{
+        --ion-grid-padding: 10px;
+  
+        --ion-grid-padding-xs: 10px;
+        --ion-grid-padding-sm: 10px;
+        --ion-grid-padding-md: 10px;
+        --ion-grid-padding-lg: 10px;
+        --ion-grid-padding-xl: 10px;
+  
+        --ion-grid-column-padding: 10px;
+  
+        --ion-grid-column-padding-xs: 20px;
+        --ion-grid-column-padding-sm: 20px;
+        --ion-grid-column-padding-md: 20px;
+        --ion-grid-column-padding-lg: 20px;
+        --ion-grid-column-padding-xl: 20px;
+  
+        ion-col{
+          color: var(--ion-color-light);
+          font-weight: bold;
+          font-style: italic;
+          font-size: 18px;
+          margin-top: 5px;
+        }
+      }
+  
+  
+    }
+
+    .describe_frame {
+        background: rgba(255, 255, 255, 0.6);
+        width: 50%;
+        border-radius: 4px;
+        font-weight: bold;
+    
+        padding-top: 0px;
+        margin: 2px 2.5% 1px;
+    
+        ion-grid{
+          --ion-grid-padding: 10px;
+    
+          --ion-grid-padding-xs: 10px;
+          --ion-grid-padding-sm: 10px;
+          --ion-grid-padding-md: 10px;
+          --ion-grid-padding-lg: 10px;
+          --ion-grid-padding-xl: 10px;
+    
+          --ion-grid-column-padding: 10px;
+    
+          --ion-grid-column-padding-xs: 20px;
+          --ion-grid-column-padding-sm: 20px;
+          --ion-grid-column-padding-md: 20px;
+          --ion-grid-column-padding-lg: 20px;
+          --ion-grid-column-padding-xl: 20px;
+    
+          ion-col{
+            // color: var(--ion-color-light);
+            // font-weight: bold;
+            // font-style: italic;
+            font-size: 8px;
+            //margin-top: 5px;
+          }
+        }
+      }
+
+      .button_div {
+        background: rgba(0, 0, 0, 0.4);
+        width: 35%;
+        border-radius: 4px;
+        font-weight: bold;
+    
+        padding-top: 0px;
+        margin: 2px 5% 1px;
+    
+        ion-grid{
+          --ion-grid-padding: 10px;
+    
+          --ion-grid-padding-xs: 10px;
+          --ion-grid-padding-sm: 10px;
+          --ion-grid-padding-md: 10px;
+          --ion-grid-padding-lg: 10px;
+          --ion-grid-padding-xl: 10px;
+    
+          --ion-grid-column-padding: 10px;
+    
+          --ion-grid-column-padding-xs: 20px;
+          --ion-grid-column-padding-sm: 20px;
+          --ion-grid-column-padding-md: 20px;
+          --ion-grid-column-padding-lg: 20px;
+          --ion-grid-column-padding-xl: 20px;
+    
+          ion-col{
+            color: var(--ion-color-light);
+            font-weight: bold;
+            font-style: italic;
+            font-size: 18px;
+            margin-top: 5px;
+          }
+        }
+    
+    
+      }
+
+      .bottom_area{
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10%;
+      }
+
+    .back{
+        font-size: 40px;
+        --ionicon-stroke-width: 50px;
+        margin-top: -40%;
+    }
+
+    ion-img::part(image) {
+        border-radius: 150px;
+        width: 75px;
+        margin-left: 30%;
+        }
+
+    .card_text{
+        margin-left: 10%;
+        text-align: start;
+    }
+
+    .underline-text {
+        text-decoration: underline;
+        text-decoration-color: black; /* Couleur du soulignement */
+        text-decoration-skip-ink: none; /* Pour contrôler l'espace entre le texte et le soulignement */
+        text-underline-offset: 0.5em; /* Ajustez l'espace selon vos préférences */
+      }
+  }

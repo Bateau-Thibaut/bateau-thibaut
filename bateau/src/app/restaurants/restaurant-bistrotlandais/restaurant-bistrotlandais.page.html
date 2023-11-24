@@ -1,5 +1,39 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
+  <div class="main_content">
+    <div class="titre">
+      <h2 class="underline-text">Le Bistrot Landais</h2>
+    </div>
+
+    <ion-card>
+      <img alt="bistrotlandais" class="image" src="./assets/images/bistrotlandais.jpg" />
+      <ion-card class="ion-text-center">
+        Notre cuisine française vous chouchoutera avec des plats riches en traditions au goût authentique. Essayez nos
+        spécialités et nos boissons. Notre excellente cuisine gourmande et nos excellents plats du terroir réservent de
+        belles surprises, même à nos clients les plus exigeants.
+      </ion-card>
+    </ion-card>
+
+    <div class="bottom_area">
+      <div class="button_div">
+        <!-- <ion-grid (click)="OnGoToRestaurants()"> -->
+          <ion-grid>
+          <ion-row>
+            <ion-col>
+                <ion-icon class="back" name="return-down-back"></ion-icon>
+                <ion-label>Retour</ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
+
+<!-- 
+<app-header></app-header>
+<ion-content class="custom-background" [fullscreen]="true">
   <ion-card>
     <img alt="bistrotlandais" src="./assets/images/bistrotlandais.jpg" />
     <ion-card-header>
@@ -17,4 +51,4 @@
   </ion-card>
 
 </ion-content>
-<app-footer></app-footer>
+<app-footer></app-footer> -->

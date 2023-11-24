@@ -1,5 +1,88 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
+    
+  <div class="main_content">
+    <div class="titre">
+      <h2 class="underline-text">Nos Restaurants Partenaires</h2>
+    </div>
+
+
+    <div class="content_div">
+      <ion-grid (click)="OnGoToBistrotgascons()">
+        <ion-row>
+            <ion-img src="./assets/images/bistrotgascon.jpg" alt="bistrotgascon" class="image"></ion-img>
+          <ion-col class="card_text">
+            <ion-label> Le Bistrot Des Gascons </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+
+    <div class="content_div">
+        <ion-grid (click)="OnGoToFoudelile()">
+          <ion-row>
+              <ion-img src="./assets/images/lesfousdelile.jpg" alt="lesfousdelile" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Les fous de l'île </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="content_div">
+        <ion-grid (click)="OnGoToBistrotlandais()">
+          <ion-row>
+              <ion-img src="./assets/images/bistrotlandais.jpg" alt="bistrotlandais" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Le Bistrot Landais</ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="content_div">
+        <ion-grid (click)="OnGoToVillaneuftrois()">
+          <ion-row>
+              <ion-img src="./assets/images/villa9trois.jpg" alt="villa9trois" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Villa 9 Trois </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+    <ion-row class="bottom_area">
+        <div class="describe_frame">
+            <ion-grid>
+                <ion-col>
+                <ion-label>Tous les eaux mènes à Thibaut </ion-label>
+                <ion-label>06.63.99.99.78 </ion-label>
+                <ion-label>lebateaudethibault@gmail.com </ion-label>
+                <ion-label>www.facebook.com/lebateaudethibault</ion-label>
+                </ion-col>
+            </ion-grid>
+        </div>
+        <div class="button_div">
+            <ion-grid (click)="OnGoToContact()">
+              <ion-row>
+                <ion-col>
+                    <ion-icon class="back" name="mail"></ion-icon>
+                    <ion-label>Contact</ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+    </ion-row>
+
+  </div>
+</ion-content>
+
+
+
+
+<!-- <app-header></app-header>
+<ion-content class="custom-background" [fullscreen]="true">
     <hr>
     <ion-title class="ion-text-center">Nos Restaurants Partenaires</ion-title>
     <hr>
@@ -60,4 +143,4 @@
         </ion-row>
     </ion-grid>
 </ion-content>
-<app-footer></app-footer>
+<app-footer></app-footer> -->

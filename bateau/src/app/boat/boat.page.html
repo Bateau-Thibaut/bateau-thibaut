@@ -1,6 +1,83 @@
 <app-header></app-header>
 <ion-content class="custom-background" [fullscreen]="true">
-    <hr>
+    
+  <div class="main_content">
+    <div class="titre">
+      <h2 class="underline-text">Nos Bateaux Partenaires</h2>
+    </div>
+
+
+    <div class="content_div">
+      <ion-grid (click)="OnGoToDelabrise()">
+        <ion-row>
+            <ion-img src="./assets/images/delabrise.jpg" alt="delabrise" class="image"></ion-img>
+          <ion-col class="card_text">
+            <ion-label> De la Brise </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+
+    <div class="content_div">
+        <ion-grid (click)="OnGoToSaphir()">
+          <ion-row>
+              <ion-img src="./assets/images/saphir.jpg" alt="Saphir" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Saphir </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="content_div">
+        <ion-grid (click)="OnGoToGastmicher()">
+          <ion-row>
+              <ion-img src="./assets/images/gastmicher.jpg" alt="Gastmicher" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Gastmicher </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="content_div">
+        <ion-grid (click)="OnGoToAquilon()">
+          <ion-row>
+              <ion-img src="./assets/images/aquilon.jpg" alt="Aquilon" class="image"></ion-img>
+            <ion-col class="card_text">
+              <ion-label> Aquilon </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+    <ion-row class="bottom_area">
+        <div class="describe_frame">
+            <ion-grid>
+                <ion-col>
+                <ion-label>Tous les eaux mènes à Thibaut </ion-label>
+                <ion-label>06.63.99.99.78 </ion-label>
+                <ion-label>lebateaudethibault@gmail.com </ion-label>
+                <ion-label>www.facebook.com/lebateaudethibault</ion-label>
+                </ion-col>
+            </ion-grid>
+        </div>
+        <div class="button_div">
+            <ion-grid (click)="OnGoToContact()">
+              <ion-row>
+                <ion-col>
+                    <ion-icon class="back" name="mail"></ion-icon>
+                    <ion-label>Contact</ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+    </ion-row>
+
+  </div>
+  
+    <!-- <hr>
     <ion-title class="ion-text-center">Bateaux</ion-title>
     <hr>
     <ion-grid>
@@ -54,6 +131,5 @@
                 </ion-button>
             </ion-col>
         </ion-row>
-    </ion-grid>
+    </ion-grid> -->
 </ion-content>
-<app-footer></app-footer>
