@@ -42,7 +42,7 @@ export class PanierPage implements OnInit {
           {
             text: 'Oui',
             handler: async () => {
-              console.log('Commande confirmée');
+              console.log('Supression confirmée');
               this.cartArray = this.cartArray.filter(product => product !== item);
 
             }

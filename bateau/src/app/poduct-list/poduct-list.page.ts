@@ -52,7 +52,6 @@ export class PoductListPage implements OnInit {
   }
 
   async addToBasket(product: { name: string, price: number, categoryID: number }) {
-    console.log("Je suis ajouté au panier", product.name, product.price);
     const toast = await this.toastController.create({
       message: `${product.name} à été ajouté au panier !`,
       duration: 1500, // Durée de l'affichage en millisecondes
@@ -68,11 +67,12 @@ export class PoductListPage implements OnInit {
     this.productListService.getCart().subscribe(cart => {
       this.cartArray = cart;
 
-      // Affichez le panier dans la console
-      console.log("Panier mis à jour :", this.cartArray);
-
       // Sauvegarde dans le stockage local
       localStorage.setItem("panier", JSON.stringify(this.cartArray));
     });
+
+    console.log("Panier mis à jour :", this.cartArray);
+
+
   }
 }
