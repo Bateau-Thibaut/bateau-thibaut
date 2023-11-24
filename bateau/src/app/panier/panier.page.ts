@@ -42,7 +42,7 @@ export class PanierPage implements OnInit {
           {
             text: 'Oui',
             handler: async () => {
-              console.log('Commande confirmée');
+              console.log('Supression confirmée');
               this.cartArray = this.cartArray.filter(product => product !== item);
 
             }
@@ -84,14 +84,16 @@ export class PanierPage implements OnInit {
               duration: 2000, // Durée de l'affichage en millisecondes
               position: 'top' // Position de la notification
             });
-
+            this.productListService.clearCart();
             toast.present();
           }
+
         }
       ]
     });
 
     await alert.present();
+
   }
 
   calculateTotalPrice(): number {

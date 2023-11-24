@@ -49,4 +49,9 @@ export class ProductListService {
   getCart() {
     return this.cart$;
   }
+
+  clearCart() {
+    this.cartSubject.next([]); // Réinitialisez le panier à un tableau vide
+    localStorage.removeItem("panier"); // Supprimez le panier du stockage local
+  }
 }
