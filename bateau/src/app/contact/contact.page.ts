@@ -13,4 +13,8 @@ export class ContactPage implements OnInit {
   ngOnInit() {
   }
 
+  OnGoToHome() {
+    this.router.navigate(['/home']);
+  }
+
 }

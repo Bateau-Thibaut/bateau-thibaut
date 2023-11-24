@@ -132,3 +132,13 @@ ion-col {
 ion-card {
     all: unset;
 }
+
+.underline-text {
+    text-decoration: underline;
+    text-decoration-color: black;
+    /* Couleur du soulignement */
+    text-decoration-skip-ink: none;
+    /* Pour contrôler l'espace entre le texte et le soulignement */
+    text-underline-offset: 0.5em;
+    /* Ajustez l'espace selon vos préférences */
+}

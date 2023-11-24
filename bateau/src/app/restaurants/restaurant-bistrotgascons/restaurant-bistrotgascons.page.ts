@@ -12,6 +12,9 @@ export class RestaurantBistrotgasconsPage implements OnInit {
 
   ngOnInit() {
   }
+  OnGoToRestaurants() {
+    this.router.navigate(['/restaurants']);
+  }
 
 
 

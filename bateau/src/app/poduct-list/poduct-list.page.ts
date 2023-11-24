@@ -55,7 +55,7 @@ export class PoductListPage implements OnInit {
     const toast = await this.toastController.create({
       message: `${product.name} à été ajouté au panier !`,
       duration: 1500, // Durée de l'affichage en millisecondes
-      position: 'top'
+      position: 'bottom'
       // Position de la notification
     });
 

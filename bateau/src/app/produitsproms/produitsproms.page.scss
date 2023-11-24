@@ -1,4 +1,4 @@
-.main_content{
+.main_content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,14 +8,23 @@
   //border-radius: 5px;
   margin-top: 100px;
 
-    h2{
-      color: var(--ion-color-light);
-      font-weight: 750;
-      font-style: italic;
-      font-size: 20px;
-      margin-bottom: 50px;
+  h2 {
+    color: var(--ion-color-light);
+    font-weight: 750;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 50px;
   }
 
+  .underline-text {
+    text-decoration: underline;
+    text-decoration-color: black;
+    /* Couleur du soulignement */
+    text-decoration-skip-ink: none;
+    /* Pour contrôler l'espace entre le texte et le soulignement */
+    text-underline-offset: 0.5em;
+    /* Ajustez l'espace selon vos préférences */
+  }
 
 
   .content_div {
@@ -27,7 +36,7 @@
     padding-top: 0px;
     margin: 5px 0px 10px;
 
-    ion-grid{
+    ion-grid {
       --ion-grid-padding: 10px;
 
       --ion-grid-padding-xs: 10px;
@@ -44,7 +53,7 @@
       --ion-grid-column-padding-lg: 20px;
       --ion-grid-column-padding-xl: 20px;
 
-      ion-col{
+      ion-col {
         color: var(--ion-color-light);
         font-weight: bold;
         font-style: italic;

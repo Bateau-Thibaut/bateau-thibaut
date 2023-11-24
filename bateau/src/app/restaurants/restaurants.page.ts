@@ -18,6 +18,8 @@ export class RestaurantsPage implements OnInit {
     this.router.navigate(['/contact']);
   }
 
+
+
   OnGoToBistrotgascons() {
     this.router.navigate(['/restaurant-bistrotgascons']);
   }

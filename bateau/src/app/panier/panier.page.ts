@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductListService } from '../services/productList/product-list.service';
 import { AlertController, ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-panier',
@@ -13,7 +14,7 @@ export class PanierPage implements OnInit {
   cartArray: any[] = [];
   address: string = "123 Rue de la République, Paris";
   pickupDate: Date = new Date(); // Vous devez définir la date de récupération selon votre logique.
-  constructor(private productListService: ProductListService, private alertController: AlertController, private toastController: ToastController) { }
+  constructor(private productListService: ProductListService, private alertController: AlertController, private toastController: ToastController, private router: Router) { }
 
   // Incrémente la quantité du produit dans le panier
   incrementQuantity(item: any) {
@@ -82,17 +83,18 @@ export class PanierPage implements OnInit {
             const toast = await this.toastController.create({
               message: 'Commande confirmée',
               duration: 2000, // Durée de l'affichage en millisecondes
-              position: 'top' // Position de la notification
+              position: 'bottom' // Position de la notification
             });
             this.productListService.clearCart();
             toast.present();
+            this.router.navigate(['/home']);
           }
 
         }
       ]
     });
-
     await alert.present();
+
 
   }
 
